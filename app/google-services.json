@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "859152805556",
+    "project_id": "bicycle-login-register-a3d89",
+    "storage_bucket": "bicycle-login-register-a3d89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859152805556:android:dd0942201b078fa7fb71e1",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHBUnVrCafGtxZJHdFXLGofZrcIxgjZIQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
