@@ -53,6 +53,7 @@ dependencies {
     implementation ("com.google.android.libraries.places:places:3.0.0")
     implementation ("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation ("com.google.android.gms:play-services-maps:18.0.0")
+    implementation ("androidx.fragment:fragment:1.3.6")
 
     implementation ("androidx.navigation:navigation-fragment-ktx:2.5.3")
     implementation ("androidx.navigation:navigation-ui-ktx:2.5.3")
