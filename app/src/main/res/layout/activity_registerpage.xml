@@ -87,7 +87,7 @@
                 android:backgroundTint="#0F4551"
 
                 android:text="REGISTER"
-                android:textSize="18sp"
+                android:textSize="15sp"
                 app:cornerRadius="20dp" />
         </LinearLayout>
 

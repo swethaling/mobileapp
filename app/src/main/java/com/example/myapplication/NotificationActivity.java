@@ -1,8 +1,8 @@
 package com.example.myapplication;
+
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -82,19 +82,19 @@ public class NotificationActivity extends FragmentActivity implements OnMapReady
     }
 
     @Override
-    public void onMapReady(GoogleMap googleMap) {
+    public void onMapReady(@NonNull GoogleMap googleMap) {
         mMap = googleMap;
 
         // Add a marker in Chennai and move the camera
         LatLng chennai = new LatLng(13.0827, 80.2707);
         mMap.addMarker(new MarkerOptions().position(chennai).title("Marker in Chennai"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(chennai, 10));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(chennai, 12));
     }
 
     private void sendEmail() {
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
         emailIntent.setType("message/rfc822");
-        emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"example@gmail.com"});
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"vilovibe@gmail.com"});
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Subject Here");
         emailIntent.putExtra(Intent.EXTRA_TEXT, "Body Here");
 

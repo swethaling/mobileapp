@@ -2,18 +2,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Required Permissions -->
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
 
-
-
+    <!-- Application Declaration -->
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -24,19 +25,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
+
+        <!-- Activity Declarations -->
         <activity android:name=".ProductActivity" />
         <activity android:name=".ProductActivity2" />
         <activity android:name=".ProductActivity3" />
         <activity android:name=".ProductActivity4" />
-
         <activity android:name=".NotificationActivity" android:exported="true" />
-
         <activity android:name=".DashboardActivity" android:exported="false"/>
-
         <activity android:name=".home" android:exported="false" />
         <activity android:name=".login" android:exported="false" />
         <activity android:name=".registerpage" android:exported="false" />
-
         <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,9 +44,9 @@
         </activity>
         <activity android:name=".Shop" android:exported="true" />
 
+        <!-- Meta-data Declarations -->
         <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
-        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyA4CsYpj9zP3Aw-n_XC64WJU4f3uN6i3wI"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyDh2eAz3fd_tcM5y4-Bd8iuu-jFrX2jejo"/>
 
     </application>
-
 </manifest>
